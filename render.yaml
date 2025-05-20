@@ -4,11 +4,10 @@ services:
     env: docker
     plan: free
     region: oregon
-    dockerfilePath: ""  # No necesitas uno porque usarás una imagen externa
     image: atendai/evolution-api:homolog
     envVars:
       - key: DATABASE_URL
-        value: postgres://user:0NJ7OOq9omeAwXmsJEdqcfzkcy3MNI79@dpg-d0mdt1umcj7s7397ri8g-a.oregon-postgres.render.com:5432/evolution_o69b
+        value: postgresql://user:0NJ7OOq9omeAwXmsJEdqcfzkcy3MNI79@dpg-d0mdt1umcj7s7397ri8g-a.oregon-postgres.render.com:5432/evolution_o69b
       - key: REDIS_HOST
         value: relaxing-penguin-32321.upstash.io
       - key: REDIS_PORT
@@ -18,5 +17,5 @@ services:
       - key: TZ
         value: America/Santiago
     ports:
-      - port: 8080  # El contenedor expone el 8080
+      - port: 8080
         protocol: http
