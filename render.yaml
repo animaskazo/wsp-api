@@ -5,17 +5,6 @@ services:
     plan: free
     region: oregon
     image: atendai/evolution-api:homolog
-    envVars:
-      - key: DATABASE_URL
-        value: postgresql://user:0NJ7OOq9omeAwXmsJEdqcfzkcy3MNI79@dpg-d0mdt1umcj7s7397ri8g-a.oregon-postgres.render.com:5432/evolution_o69b
-      - key: REDIS_HOST
-        value: relaxing-penguin-32321.upstash.io
-      - key: REDIS_PORT
-        value: "6379"
-      - key: REDIS_PASSWORD
-        value: AX5BAAIjcDE1NmNjMDYwOWU3NTY0NTVmYmM2Zjg1MTUzOTllYzAxZnAxMA
-      - key: TZ
-        value: America/Santiago
     ports:
       - port: 8080
         protocol: http
