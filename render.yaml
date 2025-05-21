@@ -9,5 +9,8 @@ services:
       - port: 8080
         protocol: http
     envVars:
-      - key: DATABASE_URL
+      - key: DB_PROVIDER
         value: postgresql://user:0NJ7OOq9omeAwXmsJEdqcfzkcy3MNI79@dpg-d0mdt1umcj7s7397ri8g-a.oregon-postgres.render.com:5432/evolution_o69b
+      - key: DATABASE_PROVIDER
+        value: postgresql
+
