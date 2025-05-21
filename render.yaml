@@ -8,12 +8,6 @@ services:
     ports:
       - port: 8080
         protocol: http
-
     envVars:
-  - key: POSTGRES_DB
-    value: evolution_o69b
-  - key: POSTGRES_USER
-    value: user  # debe coincidir con tu db
-  - key: POSTGRES_PASSWORD
-    value: 0NJ7OOq9omeAwXmsJEdqcfzkcy3MNI79
-
+      - key: DATABASE_URL
+        value: postgresql://user:0NJ7OOq9omeAwXmsJEdqcfzkcy3MNI79@dpg-d0mdt1umcj7s7397ri8g-a.oregon-postgres.render.com:5432/evolution_o69b
